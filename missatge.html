@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Missatge</title>
+	<style>
+	.center {
+		padding: 20%;
+    	display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	#missatge {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	</style>
+</head>
+<body onload="missatge()">
+	<div class="center">
+			<div id="missatge"></div>
+			<p> </p>
+			<button onclick="missatge()">NOM</button>
+	</div>
+	<script>
+		function missatge() {
+			var enter = prompt("Enter your name", "")
+			if (enter != null) {
+				document.getElementById("missatge").innerHTML = "Hola " + enter + "! Que tinguis un bon dia :)";
+			}
+		}
+	</script>
+</body>
+</html>
